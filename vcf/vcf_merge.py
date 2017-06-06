@@ -29,7 +29,7 @@ def vcf_merge(path,par1,par2,output):
         Par_mtr.to_csv(output,sep='\t',index=False)
 if __name__ == '__main__':
 	from optparse import OptionParser
-	ms_usage='python %prog [-f] File_path [-P1] Parent1 [-P2] Parents [-o] output.file'
+	ms_usage='python %prog [-f] File_path [-p] Parent1 [-m] Parents [-o] output.file'
 	descr='Use this script to merge the vcf genotype files which separate called in the process'
 	optpar=OptionParser(usage=ms_usage,description=descr)
 	optpar.add_option('-f', '--file_path',dest='path',
